@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco Huella Chilca — App</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2f8f4a">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Barra superior -->
+  <header class="topbar">
+    <h1>Eco Huella</h1>
+  </header>
+
+  <main id="app">
+
+   <!-- HOME -->
+<section id="home" class="page active">
+  <div class="hero-mobile">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=60">
+
+    <div class="hero-text">
+      <h2>Protege Chilca</h2>
+      <p>Cuidemos juntos el ecosistema urbano de Huancayo.</p>
+      <button class="btn-primary" data-target="impacto">Ver impacto</button>
+    </div>
+  </div>
+
+  <div class="cards-mobile">
+
+    <!-- CARD 1 -->
+    <div class="card interactive" data-msg="La basura afecta la salud y el ambiente.">
+      <h3>Datos rápidos</h3>
+      <ul>
+        <li>La basura contamina suelos y agua.</li>
+        <li>La falta de áreas verdes afecta el aire.</li>
+        <li>El agua se está volviendo más escasa.</li>
+      </ul>
+
+      <div class="mini-panel">
+        <p>
+          La acumulación de residuos genera puntos de contaminación que afectan directamente la salud
+          y aceleran el deterioro ambiental en zonas urbanas como Chilca.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card interactive" data-msg="Más áreas verdes generan más oxígeno.">
+      <h3>Indicadores</h3>
+
+      <div class="progress">
+        <label>Áreas verdes</label>
+        <div class="bar"><span style="width:62%"></span></div>
+        <small>62% meta municipal</small>
+      </div>
+
+      <div class="progress">
+        <label>Reciclaje</label>
+        <div class="bar"><span style="width:41%"></span></div>
+        <small>41% vecinos participan</small>
+      </div>
+
+      <div class="mini-panel">
+        <p>
+          Aumentar las áreas verdes ayuda a purificar el aire, reducir temperaturas y mejorar la calidad
+          de vida de los habitantes del distrito.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card interactive" data-msg="¡Tu participación crea cambios reales!">
+      <h3>Participa</h3>
+      <p>Únete a campañas de limpieza.</p>
+      <button class="btn-primary" data-target="about">Contacto</button>
+
+      <div class="mini-panel">
+        <p>
+          Las campañas de limpieza comunal se realizan cada fin de semana y necesitan voluntarios.
+          Tu apoyo fortalece la educación ambiental del distrito.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- IMPACTO -->
+<section id="impacto" class="page">
+  <h2>Impacto ciudadano</h2>
+  <p>Las acciones diarias alteran el equilibrio ecológico.</p>
+
+  <div class="accordion">
+
+    <button class="acc-btn interactive"
+      data-msg="La contaminación del aire en Chilca provoca problemas respiratorios, irritación ocular y empeora enfermedades crónicas.">
+      Aire y salud
+    </button>
+    <div class="acc-panel">
+      <p>
+        La quema de residuos libera partículas tóxicas (PM2.5) que afectan directamente los pulmones
+        de niños, adultos mayores y personas con asma.
+      </p>
+    </div>
+
+    <button class="acc-btn interactive"
+      data-msg="La basura acumulada bloquea drenajes y aumenta el riesgo de inundaciones en épocas de lluvia.">
+      Agua y drenaje
+    </button>
+    <div class="acc-panel">
+      <p>
+        Los residuos mal gestionados terminan en los sistemas de drenaje provocando desbordes.
+      </p>
+    </div>
+
+    <button class="acc-btn interactive"
+      data-msg="La reducción de áreas verdes elimina refugios para aves e insectos, afectando la cadena ecológica.">
+      Biodiversidad
+    </button>
+    <div class="acc-panel">
+      <p>
+        Menos plantas significa menos fauna, lo que genera desequilibrio ambiental en zonas urbanas.
+      </p>
+    </div>
+
+  </div>
+
+  <h3>Ejemplos en Chilca</h3>
+  <ul class="list">
+    <li>Residuos en mercados.</li>
+    <li>Riego deficiente.</li>
+    <li>Uso excesivo de autos.</li>
+  </ul>
+</section>
+
+
+<!-- ACCIONES -->
+<section id="acciones" class="page">
+  <h2>Acciones concretas</h2>
+
+  <div class="actions-grid">
+
+    <div class="tile interactive"
+      data-msg="Reducir significa evitar generar residuos desde el inicio.">
+      <h4>Reduce</h4>
+    </div>
+
+    <div class="tile interactive"
+      data-msg="Reutilizar prolonga la vida útil de tus objetos evitando que terminen como basura.">
+      <h4>Reutiliza</h4>
+    </div>
+
+    <div class="tile interactive"
+      data-msg="Reciclar correctamente ayuda a disminuir los residuos enviados al botadero.">
+      <h4>Recicla</h4>
+    </div>
+
+    <div class="tile interactive"
+      data-msg="Camina, usa bicicleta o transporte compartido para reducir emisiones.">
+      <h4>Movilidad</h4>
+    </div>
+
+  </div>
+
+
+  <!-- 🔽 ACORDEÓN AGREGADO ABAJO 🔽 -->
+  <h3 style="margin-top:25px;">Explicación detallada</h3>
+
+  <div class="accordion">
+
+    <button class="acc-btn interactive"
+      data-msg="Reducir implica consumir menos y evitar productos de un solo uso.">
+      Reduce
+    </button>
+    <div class="acc-panel">
+      <p>
+        Reducir es priorizar productos duraderos, evitar plásticos desechables
+        y preferir compras realmente necesarias. Cada pequeño cambio disminuye
+        la presión ambiental.
+      </p>
+    </div>
+
+    <button class="acc-btn interactive"
+      data-msg="Reutilizar prolonga la vida útil de objetos y reduce desperdicio.">
+      Reutiliza
+    </button>
+    <div class="acc-panel">
+      <p>
+        Usar bolsas de tela, botellas reutilizables y reparar objetos antes de botarlos
+        ayuda a disminuir la generación de residuos diarios.
+      </p>
+    </div>
+
+    <button class="acc-btn interactive"
+      data-msg="Reciclar transforma residuos en nuevos materiales.">
+      Recicla
+    </button>
+    <div class="acc-panel">
+      <p>
+        Clasificar vidrio, plástico, papel y metal permite que estos materiales
+        regresen a la cadena productiva sin contaminar el ambiente.
+      </p>
+    </div>
+
+    <button class="acc-btn interactive"
+      data-msg="Moverse a pie o en bici ayuda a disminuir la contaminación.">
+      Movilidad sostenible
+    </button>
+    <div class="acc-panel">
+      <p>
+        Cambiar el uso del auto por caminatas o bicicleta reduce emisiones de dióxido
+        de carbono y mejora tu salud física.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+  <h3>Acciones en 7 días</h3>
+  <ul class="checklist">
+    <li><input type="checkbox" id="c1"><label for="c1">No usar bolsas 2 días</label></li>
+    <li><input type="checkbox" id="c2"><label for="c2">Recoger 1 bolsa de basura</label></li>
+    <li><input type="checkbox" id="c3"><label for="c3">Apagar luces innecesarias</label></li>
+  </ul>
+
+</section>
+
+
+    <!-- GALERÍA -->
+<section id="galeria" class="page">
+  <h2>Galería</h2>
+  <p>Fotos y video de Chilca.</p>
+
+  <div class="gallery">
+    <img src="https://diariocorreo.pe/resizer/O4VCAaxX1E2oYf9oyM6mxR9vKOQ=/1200x675/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/24LOKPWFL5F35HLPS5KQOYSYQA.jpg">
+    <img src="https://diariocorreo.pe/resizer/-y7sKvyCKzzBOIgEVJjkdqNukKo=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/Z7RH5DVWHZDVLNCFDCO7FMBKYA.jpg">
+    <img src="https://diariocorreo.pe/resizer/HgaMo7algWjWqxJSY1hJrqFKVmw=/800x536/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/3QD6RNCZQFDAFEMDG2PWATIJTM.jpg">
+
+    <!-- VIDEO CENTRADO -->
+<div class="video-container">
+  <video controls>
+    <source src="video/rio-chilca.mp4.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="page">
+  <h2>Sobre el grupo</h2>
+  <p>Somos estudiantes comprometidas con el ambiente.</p>
+
+  <p>Escríbenos:
+    <a href="mailto:eco.huella.chilca@example.com">
+      eco.huella.chilca@example.com
+    </a>
+  </p>
+
+  <a class="btn-primary" href="#" target="_blank">Ver resumen</a>
+</section>
+
+  </main>
+
+  <!-- MENÚ INFERIOR -->
+  <nav class="bottom-nav">
+    <button data-target="home">Inicio</button>
+    <button data-target="impacto">Impacto</button>
+    <button data-target="acciones">Acciones</button>
+    <button data-target="galeria">Galería</button>
+    <button data-target="about">Grupo</button>
+  </nav>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span id="closeLightbox" class="close-lightbox">&times;</span>
+    <img id="lightboxImg" src="">
+    <video id="lightboxVideo" controls style="display:none;"></video>
+  </div>
+
+  <!-- CUADRO DE MENSAJES INTERACTIVOS -->
+  <div id="interactiveMsgBox" class="msg-box"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+<section id="galeria" class="p-6 bg-gray-100 flex flex-col items-center">
+    <h2 class="text-2xl font-bold mb-6 text-center">Galería</h2>
+
+    <div class="w-full max-w-2xl flex flex-col items-center gap-6">
+
+        <!-- Imagen de ejemplo -->
+        <img src="img/foto1.jpg" class="rounded-lg shadow-xl w-full">
+
+        <!-- VIDEO MP4 CENTRADO -->
+        <video 
+            controls 
+            class="rounded-lg shadow-xl w-full max-w-2xl"
+            poster="img/poster.jpg"
+        >
+            <source src="video/RIO CHILCA - Ambi_FIQ (1080p, h264).mp4" type="video/mp4">
+            Tu navegador no soporta video en formato MP4.
+        </video>
+
+    </div>
+</section>
+<video controls>
+  <source src="video/rio-chilca.mp4.mp4" type="video/mp4">
+</video>
+
+
+
